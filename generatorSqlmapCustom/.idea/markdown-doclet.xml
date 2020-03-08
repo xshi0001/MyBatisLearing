@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ch.raffael.mddoclet.integrations.idea.MarkdownDocletIdea.ProjectConfiguration">
+    <option name="enabled" value="true" />
+    <option name="renderingOptions">
+      <RenderingOptions>
+        <option name="abbreviations" value="true" />
+        <option name="anchorLinks" value="true" />
+        <option name="forceListItemPara" value="true" />
+        <option name="extAnchorLinks" value="true" />
+      </RenderingOptions>
+    </option>
+  </component>
+</project>

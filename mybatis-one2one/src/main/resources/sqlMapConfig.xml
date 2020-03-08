@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <properties resource="jdbc.properties"/>
+
+    <!-- 别名 包以其子包下所有类   头字母大小都行-->
+    <typeAliases>
+        <!-- 		<typeAlias type="com.itheima.mybatis.pojo.User" alias="User"/> -->
+        <package name="com.itheima.mybatis.pojo"/>
+    </typeAliases>
+
+
+    <environments default="development">
+        <environment id="development">
+            <!-- 使用jdbc事务管理 -->
+            <transactionManager type="JDBC"/>
+            <!-- 数据库连接池 -->
+            <dataSource type="POOLED">
+                <property name="driver" value="${jdbc.driver}"/>
+                <property name="url"
+                          value="${jdbc.url}"/>
+                <property name="username" value="${jdbc.username}"/>
+                <property name="password" value="${jdbc.password}"/>
+            </dataSource>
+        </environment>
+    </environments>
+
+
+    <!-- Mapper的位置  Mapper.xml 写Sql语句的文件的位置 -->
+    <mappers>
+        <!--1 使用相对于类路径的资源        -->
+        <!--可以放在任意位置，且不同名，如resource目录下的User.xml        -->
+        <!--        <mapper resource="com.itheima.mybatis.mapper/User.xml"/>-->
+
+
+        <!--2 使用mapper接口类路径-->
+        <!--此种方法要求mapper接口名称和mapper.xml映射文件名称相同，且放在同一个目录中。去掉resource中xml-->
+        <!-- 如果是maven工程，要在pom文件中修改打包方式-->
+        <!--        <mapper class="com.itheima.mybatis.mapper.UserMapper"/>-->
+
+
+        <!--3 注册指定包下的所有mapper接口-->
+        <!-- 此种方法要求mapper接口名称和mapper映射文件名称相同，且放在同一个目录中-->
+        <!-- 如果是maven工程，要在pom文件中修改打包方式-->
+
+        <package name="com.itheima.mybatis.mapper"/>
+
+    </mappers>
+</configuration>

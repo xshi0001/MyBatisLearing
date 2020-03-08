@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="generatorSqlmapCustom" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="generatorSqlmapCustom" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="generatorSqlmapCustom" options="-extdirs &quot;D:\BaiduNetdiskDownload\28-Mybatis V3-2(共34集)\01.第一套 推荐学习此套(老师讲得非常好)\代码\generatorSqlmapCustom/lib&quot;" />
+    </option>
+  </component>
+</project>

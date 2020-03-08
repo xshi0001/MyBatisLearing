@@ -1,0 +1,13 @@
+com\itheima\mybatis\pojo\OrdersExample$Criteria.class
+GeneratorSqlmap.class
+com\itheima\mybatis\mapper\OrdersMapper.class
+com\itheima\mybatis\pojo\UserExample$Criterion.class
+com\itheima\mybatis\pojo\UserExample$Criteria.class
+com\itheima\mybatis\pojo\UserExample$GeneratedCriteria.class
+com\itheima\mybatis\pojo\OrdersExample$Criterion.class
+com\itheima\mybatis\pojo\Orders.class
+com\itheima\mybatis\mapper\UserMapper.class
+com\itheima\mybatis\pojo\User.class
+com\itheima\mybatis\pojo\UserExample.class
+com\itheima\mybatis\pojo\OrdersExample$GeneratedCriteria.class
+com\itheima\mybatis\pojo\OrdersExample.class

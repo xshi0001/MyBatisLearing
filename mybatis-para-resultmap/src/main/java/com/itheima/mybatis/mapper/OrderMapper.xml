@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 写Sql语句  命名空间  -->
+<mapper namespace="com.itheima.mybatis.mapper.OrderMapper">
+    <!--    需求：查询订单表order的所有数据-->
+    <!-- 定制化pojo 数据库表列名   -->
+    <resultMap type="Order" id="orders">
+        <result column="user_id" property="userId"/>
+        <result column="createtime" property="createTime"/>
+    </resultMap>
+    <select id="selectOrderList" resultMap="orders">
+        select id, user_id, number, createtime, note
+        from orders
+    </select>
+</mapper>
